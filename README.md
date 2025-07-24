@@ -126,9 +126,9 @@ Day : Thursday
 2. **Configure WiFi & Telegram Bot:**
    In `main.cpp`:
    ```cpp
+   #define BOT_TOKEN "your_telegram_bot_token"
    const char* ssid = "your_wifi_ssid";
    const char* password = "your_wifi_password";
-   #define BOT_TOKEN "your_telegram_bot_token"
    const char* mqtt_server = "your_mqtt_broker";
    ```
    
