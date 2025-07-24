@@ -96,17 +96,14 @@ Air: Moderate
 Fire: Safe
 Pres: 1012.4 hPa
 Alt : 15.3 m
-
 ```
 
 While the LCD shows:
 
 ```
-
 Time: 13:45:02
 Date: 24/07/2025
 Day : Thursday
-
 ````
 
 ---
@@ -161,5 +158,3 @@ This project is licensed under the MIT License — feel free to use and modify i
 ---
 
 ## 🤖 Built with ❤️ by the PNEUMA Team
-
-```
