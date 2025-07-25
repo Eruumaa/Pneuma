@@ -38,6 +38,25 @@
 
 ---
 
+##📌 Pin Configuration
+Component	ESP32 Pin(s) Used	Notes
+DHT11	GPIO 13	Data pin connected to GPIO 13
+MQ135	GPIO 34 (Analog)	Analog gas sensor input
+MQ2	GPIO 35 (Analog)	Analog gas sensor input
+BME280 (I2C)	GPIO 21 (SDA), GPIO 22 (SCL)	I2C communication pins
+OLED Display	GPIO 21 (SDA), GPIO 22 (SCL)	Shares I2C with BME280
+LCD 20x4 I2C	GPIO 21 (SDA), GPIO 22 (SCL)	Shares I2C with OLED and BME280
+RTC DS3231	GPIO 21 (SDA), GPIO 22 (SCL)	Shares I2C bus
+Buzzer / LED	GPIO 12	Output indicator (can be changed)
+EEPROM	Built-in	Uses ESP32’s internal flash EEPROM
+WiFi / Telegram Bot	—	Uses ESP32's built-in WiFi, no pin required
+
+⚠️ Ensure I2C devices have unique addresses. You may need an I2C scanner script to debug.
+
+*WIring diagram coming soon
+
+---
+
 ## 🧠 How It Works
 
 1. **Sensor Data Collection**  
@@ -140,6 +159,10 @@ Day : Thursday
    * Join your Telegram Bot and send `/start`
    * View logs via serial monitor
    * Access live web dashboard: [https://bit.ly/pneuma-uiweb](https://bit.ly/pneuma-uiweb)
+   * This project links are Official Pneuma (you can make your own UI using Node-red - *JSON file template coming soon)
+
+5. **Display Result:**
+   
 
 ---
 
