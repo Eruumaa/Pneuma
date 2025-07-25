@@ -1,0 +1,653 @@
+[
+    {
+        "id": "395f506c1867d675",
+        "type": "tab",
+        "label": "PNEUMA Monitoring System",
+        "disabled": false,
+        "info": "Monitoring system for PNEUMA environmental sensors"
+    },
+    {
+        "id": "1a7739959747da9d",
+        "type": "mqtt in",
+        "z": "395f506c1867d675",
+        "name": "ESP32 Temperature",
+        "topic": "esp32/temperature",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "c62fdc3c.5dc81",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 40,
+        "wires": [
+            [
+                "036bfc0cf66be14f"
+            ]
+        ]
+    },
+    {
+        "id": "036bfc0cf66be14f",
+        "type": "ui_gauge",
+        "z": "395f506c1867d675",
+        "name": "Temperature 🌡",
+        "group": "6b9d3b77.36fdc4",
+        "order": 1,
+        "width": "7",
+        "height": "4",
+        "gtype": "gage",
+        "title": "Temperature 🌡",
+        "label": "°C",
+        "format": "{{value | number:1}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "25",
+        "seg2": "35",
+        "diff": false,
+        "className": "",
+        "x": 380,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "5d99c07f72600128",
+        "type": "mqtt in",
+        "z": "395f506c1867d675",
+        "name": "ESP32 Humidity",
+        "topic": "esp32/humidity",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "c62fdc3c.5dc81",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 100,
+        "wires": [
+            [
+                "0f6caf805cfbfc22"
+            ]
+        ]
+    },
+    {
+        "id": "0f6caf805cfbfc22",
+        "type": "ui_gauge",
+        "z": "395f506c1867d675",
+        "name": "Humidity 💧",
+        "group": "6b9d3b77.36fdc4",
+        "order": 2,
+        "width": "7",
+        "height": "4",
+        "gtype": "gage",
+        "title": "Humidity 💧",
+        "label": "%",
+        "format": "{{value | number:1}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#ca3838",
+            "#00b500",
+            "#0080ff"
+        ],
+        "seg1": "30",
+        "seg2": "60",
+        "diff": false,
+        "className": "",
+        "x": 370,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "93387d6fe9baa54a",
+        "type": "mqtt in",
+        "z": "395f506c1867d675",
+        "name": "ESP32 Pressure",
+        "topic": "esp32/pressure",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "c62fdc3c.5dc81",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 160,
+        "wires": [
+            [
+                "786bdb4c9935de6f"
+            ]
+        ]
+    },
+    {
+        "id": "786bdb4c9935de6f",
+        "type": "ui_gauge",
+        "z": "395f506c1867d675",
+        "name": "Pressure 💨",
+        "group": "6b9d3b77.36fdc4",
+        "order": 3,
+        "width": "7",
+        "height": "4",
+        "gtype": "gage",
+        "title": "Pressure 💨",
+        "label": "hPa",
+        "format": "{{value | number:1}}",
+        "min": "950",
+        "max": "1050",
+        "colors": [
+            "#ca3838",
+            "#00b500",
+            "#ca3838"
+        ],
+        "seg1": "980",
+        "seg2": "1020",
+        "diff": false,
+        "className": "",
+        "x": 370,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "8b7d07e5efe0b07a",
+        "type": "mqtt in",
+        "z": "395f506c1867d675",
+        "name": "ESP32 Altitude",
+        "topic": "esp32/altitude",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "c62fdc3c.5dc81",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 220,
+        "wires": [
+            [
+                "afb39d899bbe36cf"
+            ]
+        ]
+    },
+    {
+        "id": "afb39d899bbe36cf",
+        "type": "ui_gauge",
+        "z": "395f506c1867d675",
+        "name": "Altitude 🗻",
+        "group": "6b9d3b77.36fdc4",
+        "order": 4,
+        "width": "7",
+        "height": "4",
+        "gtype": "gage",
+        "title": "Altitude 🗻",
+        "label": "m",
+        "format": "{{value | number:1}}",
+        "min": 0,
+        "max": "1000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "300",
+        "seg2": "600",
+        "diff": false,
+        "className": "",
+        "x": 370,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "6c21b22cd58189ae",
+        "type": "mqtt in",
+        "z": "395f506c1867d675",
+        "name": "ESP32 CO2",
+        "topic": "esp32/co2_ppm",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "c62fdc3c.5dc81",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 280,
+        "wires": [
+            [
+                "e97ec1a7ed34780c"
+            ]
+        ]
+    },
+    {
+        "id": "e97ec1a7ed34780c",
+        "type": "ui_gauge",
+        "z": "395f506c1867d675",
+        "name": "CO2 🏭",
+        "group": "6b9d3b77.36fdc4",
+        "order": 5,
+        "width": "7",
+        "height": "4",
+        "gtype": "gage",
+        "title": "CO₂ 🏭",
+        "label": "ppm",
+        "format": "{{value | number:1}}",
+        "min": 0,
+        "max": "400",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "150",
+        "seg2": "300",
+        "diff": false,
+        "className": "",
+        "x": 360,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "c1013de161761558",
+        "type": "mqtt in",
+        "z": "395f506c1867d675",
+        "name": "ESP32 Air Quality",
+        "topic": "esp32/air_quality",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "c62fdc3c.5dc81",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 340,
+        "wires": [
+            [
+                "8523457a87290699"
+            ]
+        ]
+    },
+    {
+        "id": "8523457a87290699",
+        "type": "function",
+        "z": "395f506c1867d675",
+        "name": "Add Emoji",
+        "func": "let quality = msg.payload;\nlet emoji = \"❓\";\n\nswitch(quality) {\n    case \"Excellent\":\n        emoji = \"✅\";\n        break;\n    case \"Good\":\n        emoji = \"👍\";\n        break;\n    case \"Moderate\":\n        emoji = \"⚠\";\n        break;\n    case \"Unhealthy\":\n        emoji = \"😷\";\n        break;\n    case \"Hazardous\":\n        emoji = \"☣\";\n        break;\n}\n\nmsg.payload = emoji + \" \" + quality;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 340,
+        "wires": [
+            [
+                "a66b162781f0cefc"
+            ]
+        ]
+    },
+    {
+        "id": "a66b162781f0cefc",
+        "type": "ui_text",
+        "z": "395f506c1867d675",
+        "group": "47dd5c10.3e9e04",
+        "order": 1,
+        "width": "7",
+        "height": "1",
+        "name": "Air Quality 🌬",
+        "label": "Air Quality 🌬:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 560,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "076a1c08cb29e52f",
+        "type": "mqtt in",
+        "z": "395f506c1867d675",
+        "name": "ESP32 Fire Level",
+        "topic": "esp32/fire_level",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "c62fdc3c.5dc81",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 120,
+        "y": 400,
+        "wires": [
+            [
+                "ca20292dd0db68a6"
+            ]
+        ]
+    },
+    {
+        "id": "ca20292dd0db68a6",
+        "type": "function",
+        "z": "395f506c1867d675",
+        "name": "Add Emoji",
+        "func": "let level = msg.payload;\nlet emoji = \"\";\n\nif (level === \"Safe\") {\n    emoji = \"✅\";\n} else if (level === \"Dangerous\") {\n    emoji = \"🔥\";\n}\n\nmsg.payload = emoji + \" \" + level;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 400,
+        "wires": [
+            [
+                "5415724fbd6ac571"
+            ]
+        ]
+    },
+    {
+        "id": "5415724fbd6ac571",
+        "type": "ui_text",
+        "z": "395f506c1867d675",
+        "group": "47dd5c10.3e9e04",
+        "order": 2,
+        "width": "7",
+        "height": "1",
+        "name": "Fire Level 🔥",
+        "label": "Fire Level 🔥:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 560,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "4460986b2f391edb",
+        "type": "mqtt in",
+        "z": "395f506c1867d675",
+        "name": "ESP32 Time",
+        "topic": "esp32/time",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "c62fdc3c.5dc81",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 460,
+        "wires": [
+            [
+                "e98ed00bbe96f271"
+            ]
+        ]
+    },
+    {
+        "id": "e98ed00bbe96f271",
+        "type": "ui_text",
+        "z": "395f506c1867d675",
+        "group": "8548f06e.14e6c",
+        "order": 2,
+        "width": "7",
+        "height": "1",
+        "name": "Time 🕒",
+        "label": "🕒 Time:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 360,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "70fbfb40c7a1d7a6",
+        "type": "mqtt in",
+        "z": "395f506c1867d675",
+        "name": "ESP32 Date",
+        "topic": "esp32/date",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "c62fdc3c.5dc81",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 520,
+        "wires": [
+            [
+                "7243667b121d1549"
+            ]
+        ]
+    },
+    {
+        "id": "7243667b121d1549",
+        "type": "ui_text",
+        "z": "395f506c1867d675",
+        "group": "8548f06e.14e6c",
+        "order": 3,
+        "width": "7",
+        "height": "1",
+        "name": "Date 📅",
+        "label": "📅 Date:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 360,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "d7adb53d1adbbd3b",
+        "type": "mqtt in",
+        "z": "395f506c1867d675",
+        "name": "ESP32 Day",
+        "topic": "esp32/day",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "c62fdc3c.5dc81",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 580,
+        "wires": [
+            [
+                "a219e1aa308f9933"
+            ]
+        ]
+    },
+    {
+        "id": "a219e1aa308f9933",
+        "type": "ui_text",
+        "z": "395f506c1867d675",
+        "group": "8548f06e.14e6c",
+        "order": 4,
+        "width": "7",
+        "height": "1",
+        "name": "Day 📆",
+        "label": "📆 Day:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 360,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "1c98eb25e62a9e91",
+        "type": "ui_template",
+        "z": "395f506c1867d675",
+        "group": "b7a08a2f.c5ad58",
+        "name": "PNEUMA Footer",
+        "order": 1,
+        "width": "7",
+        "height": "1",
+        "format": "<div style=\"text-align: center; width: 100%; font-size: 12px; color: #888;\">\n    <p>© PNEUMA 2025 | Smart Environmental Monitoring System</p>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 370,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "de5757bd12fe26a5",
+        "type": "mqtt in",
+        "z": "395f506c1867d675",
+        "name": "ESP32 MQ2 Value",
+        "topic": "esp32/mq2_value",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "c62fdc3c.5dc81",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 640,
+        "wires": [
+            [
+                "752f2a8713432bca"
+            ]
+        ]
+    },
+    {
+        "id": "752f2a8713432bca",
+        "type": "ui_gauge",
+        "z": "395f506c1867d675",
+        "name": "MQ2 Sensor Value",
+        "group": "6b9d3b77.36fdc4",
+        "order": 6,
+        "width": "7",
+        "height": "4",
+        "gtype": "gage",
+        "title": "Fire Gas Detection 🔥",
+        "label": "Raw",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "6000",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "2000",
+        "seg2": "3000",
+        "diff": false,
+        "className": "",
+        "x": 380,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "c62fdc3c.5dc81",
+        "type": "mqtt-broker",
+        "name": "MQTT Broker",
+        "broker": " 192.168.122.247",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "compatmode": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "6b9d3b77.36fdc4",
+        "type": "ui_group",
+        "name": "",
+        "tab": "c88e63e7.ff71b",
+        "order": 3,
+        "disp": true,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "47dd5c10.3e9e04",
+        "type": "ui_group",
+        "name": "Sensor Data",
+        "tab": "c88e63e7.ff71b",
+        "order": 2,
+        "disp": true,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8548f06e.14e6c",
+        "type": "ui_group",
+        "name": "Welcome, to Pneuma Live Monitoring",
+        "tab": "c88e63e7.ff71b",
+        "order": 1,
+        "disp": true,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "b7a08a2f.c5ad58",
+        "type": "ui_group",
+        "name": "",
+        "tab": "c88e63e7.ff71b",
+        "order": 4,
+        "disp": true,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c88e63e7.ff71b",
+        "type": "ui_tab",
+        "name": "PNEUMA LIVE ",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
