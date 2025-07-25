@@ -162,7 +162,7 @@ Day : Thursday
    * This project links are Official Pneuma (you can make your own UI using Node-red - *JSON file template coming soon)
 
 5. **Display Result:**
-   
+   ![Display UI](./src/Nodered_ui_1.png)
 
 ---
 
