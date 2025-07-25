@@ -164,9 +164,9 @@ Day : Thursday
    * [Node-red Template](src/node-red.json)
 
 5. **Display Result:**
-   <p> Live Monitoring </p>
+   <p><b>Live Monitoring</b></p>
    <img src= "./src/Nodered_ui_1.png" alt="Display UI" width="150"/><img src= "./src/Nodered_ui_3.png" alt="Display UI" width="150"/><img src= "./src/Nodered_ui_2.png" alt="Display UI" width="150"/>
-   <p> Telegram Chatbot</p>
+   <p><b>Telegram Chatbot</b></p>
    <img src="./src/Telegram_status.png" alt="Telegramchat" width="200" /><img src="./src/Telegram_solution.png" alt="Telegramchat" width="200"/><img src="./src/Telegram_earlywarning.png" alt="Telegramchat" width="200"/>
 
 ---
