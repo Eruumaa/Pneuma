@@ -39,6 +39,7 @@
 ---
 
 ##📌 Pin Configuration
+
 Component	ESP32 Pin(s) Used	Notes
 DHT11	GPIO 13	Data pin connected to GPIO 13
 MQ135	GPIO 34 (Analog)	Analog gas sensor input
