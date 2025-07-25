@@ -18,7 +18,7 @@
 - ☁️ MQTT support for cloud-based monitoring
 - 📲 Telegram Bot alert & command system
 - ⚠️ Intelligent air/fire hazard notifications with health recommendations
-- 🌐 Web UI for live data ([Live Monitoring Dashboard](https://bit.ly/pneuma-uiweb))
+- 🌐 Web UI for live data ([Live Monitoring Dashboard](https://bit.ly/pneuma-uiweb)) *Currently offline 
 
 ---
 
