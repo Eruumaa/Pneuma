@@ -162,8 +162,9 @@ Day : Thursday
    * This project links are Official Pneuma (you can make your own UI using Node-red - *JSON file template coming soon)
 
 5. **Display Result:**
-   
+   <p> Live Monitoring </p>
    <img src= "./src/Nodered_ui_1.png" alt="Display UI" width="100"/><img src= "./src/Nodered_ui_3.png" alt="Display UI" width="100"/><img src= "./src/Nodered_ui_2.png" alt="Display UI" width="100"/>
+   <p> Telegram Chatbot</p>
    <img src="./src/Telegram_status.png" alt="Telegramchat" width="200" /><img src="./src/Telegram_solution.png" alt="Telegramchat" width="200"/><img src="./src/Telegram_earlywarning.png" alt="Telegramchat" width="200"/>
 
 ---
