@@ -174,7 +174,7 @@ Day : Thursday
 ## 🌐 Resources
 
 * 🔗 [Website](https://pneumainventor.wixsite.com/pneuma)
-* 🔗 [Live Dashboard](https://bit.ly/pneuma-uiweb)
+* 🔗 [Live Dashboard](https://bit.ly/pneuma-uiweb) **Currently offline 
 * 🔗 [GitHub Repo](https://github.com/Eruumaa/Pneuma)
 
 ---
