@@ -7,6 +7,11 @@
 
 ---
 
+### 🏆 Achievements
+🏅 Gold Award at the World Young Inventors Exhibition (WYIE) 2025, Malaysia — This project was awarded for its innovation and impact in the field of environmental monitoring and IoT integration.
+
+---
+
 ## 🚀 Features
 
 - 🔥 Fire gas detection (via MQ2 sensor)
