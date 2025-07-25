@@ -59,7 +59,7 @@
 
 ⚠️ **Ensure I2C devices have unique addresses. You may need an I2C scanner script to debug.**
 
-*WIring diagram coming soon
+*Wiring diagram coming soon
 
 ---
 
