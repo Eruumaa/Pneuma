@@ -38,21 +38,21 @@
 
 ---
 
-##📌 Pin Configuration
+## 📌 Pin Configuration
 
-Component	ESP32 Pin(s) Used	Notes
-DHT11	GPIO 13	Data pin connected to GPIO 13
-MQ135	GPIO 34 (Analog)	Analog gas sensor input
-MQ2	GPIO 35 (Analog)	Analog gas sensor input
-BME280 (I2C)	GPIO 21 (SDA), GPIO 22 (SCL)	I2C communication pins
-OLED Display	GPIO 21 (SDA), GPIO 22 (SCL)	Shares I2C with BME280
-LCD 20x4 I2C	GPIO 21 (SDA), GPIO 22 (SCL)	Shares I2C with OLED and BME280
-RTC DS3231	GPIO 21 (SDA), GPIO 22 (SCL)	Shares I2C bus
-Buzzer / LED	GPIO 12	Output indicator (can be changed)
-EEPROM	Built-in	Uses ESP32’s internal flash EEPROM
-WiFi / Telegram Bot	—	Uses ESP32's built-in WiFi, no pin required
+- **Component	ESP32 Pin(s) Used	Notes**
+- **DHT11	GPIO 13	Data pin connected to GPIO 13**
+- **MQ135	GPIO 34 (Analog)	Analog gas sensor input**
+- **MQ2	GPIO 35 (Analog)	Analog gas sensor input**
+- **BME280 (I2C)	GPIO 21 (SDA), GPIO 22 (SCL)	I2C communication pins**
+- **OLED Display	GPIO 21 (SDA), GPIO 22 (SCL)	Shares I2C with BME280**
+- **LCD 20x4 I2C	GPIO 21 (SDA), GPIO 22 (SCL)	Shares I2C with OLED and BME280**
+- **RTC DS3231	GPIO 21 (SDA), GPIO 22 (SCL)	Shares I2C bus**
+- **Buzzer / LED	GPIO 12	Output indicator (can be changed)**
+- **EEPROM	Built-in	Uses ESP32’s internal flash EEPROM**
+- **WiFi / Telegram Bot	—	Uses ESP32's built-in WiFi, no pin required**
 
-⚠️ Ensure I2C devices have unique addresses. You may need an I2C scanner script to debug.
+⚠️ **Ensure I2C devices have unique addresses. You may need an I2C scanner script to debug.**
 
 *WIring diagram coming soon
 
