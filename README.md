@@ -159,7 +159,8 @@ Day : Thursday
    * Join your Telegram Bot and send `/start`
    * View logs via serial monitor
    * Access live web dashboard: [https://bit.ly/pneuma-uiweb](https://bit.ly/pneuma-uiweb)
-   * This project links are Official Pneuma (you can make your own UI using Node-red - [.src/node-red.json]
+   * This project links are Official Pneuma (you can make your own UI using Node-red)
+   * [Node-red Template](.src/node-red.json)
 
 5. **Display Result:**
    <p> Live Monitoring </p>
